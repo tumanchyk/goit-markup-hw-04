@@ -128,6 +128,8 @@ p {
 
 /* hero */
 .hero {
+  max-width: 1600px;
+  height: 600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -135,8 +137,9 @@ p {
     url(../images/bg-img.jpg);
   background-color: var(--hidden-hero-bg);
   background-repeat: no-repeat;
-  background-size: 1900px;
+  background-size: cover;
   background-position: center;
+  margin: 0 auto;
   padding: 200px 0;
 }
 
@@ -171,6 +174,7 @@ p {
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--color-active-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .visually-hidden {
   position: absolute;
@@ -209,6 +213,7 @@ p {
   align-items: center;
   justify-content: center;
   height: 120px;
+  border-radius: 4px;
   background-color: var(--secondary-light-bg-color);
 }
 .feat-icon {
@@ -250,19 +255,19 @@ p {
 }
 .img-team {
   display: block;
-  margin-bottom: 30px;
 }
 .team-worker {
   width: 270px;
   background-color: var(--primary-color-bg);
   box-shadow: var(--shadow-team-card);
   border-radius: 0 0 4px 4px;
-  padding-bottom: 30px;
 }
 .team-worker:not(:last-child) {
   margin-right: 30px;
 }
-
+.team-info {
+  padding: 30px 0;
+}
 .team-social {
   display: flex;
   justify-content: center;
